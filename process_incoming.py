@@ -44,7 +44,7 @@ max_indx = similarities.argsort()[::-1][0:top_results]
 new_df = df.loc[max_indx] 
 # print(new_df[["title", "number", "text"]])
 
-prompt = f'''I am teaching web development in my Sigma web development course. Here are video subtitle chunks containing video title, video number, start time in seconds, end time in seconds, the text at that time:
+prompt = f'''I want you to help the user to find the topic. to Here are video subtitle chunks containing video title, video number, start time in seconds, end time in seconds, the text at that time:
 
 {new_df[["title", "number", "start", "end", "text"]].to_json(orient="records")}
 ---------------------------------
