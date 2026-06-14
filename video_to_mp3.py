@@ -10,5 +10,5 @@ for file in files:
     subprocess.run(["ffmpeg", "-i", f"videos/{file}", f"audios/{tutorial_number}_{file_name}.mp3"])
 
 '''
-the name of the file could be in the format of the given title 'Web Development !Basic Structure of an HTML Website #3.mp4'.
+the name of the file could be in the format of the given title 'Your First HTML Website ｜ Sigma Web Development Course - Tutorial #2 [kJEsTjH5mVg].mp4'.
 '''
